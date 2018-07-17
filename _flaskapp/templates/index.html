@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+<div class='wrap-contact100'>
+    
+    <!-- Render Form -->
+    <span class='contact100-form-title'>Cars Price Predictor</span>
+    <form action="" method="post" class="contact100-form form" role="form">
+        {{ form.csrf_token() }}
+        <d1>
+            {{ wtf.form_field(form.miles, class="form-control", placeholder="50,000") }}
+            {{ wtf.form_field(form.make,  class="form-control") }}
+        </d1>
+        <p><input type="submit" class='btn btn-primary btn-block'></p>
+    </form>
+    <!-- ================ -->
+
+</div>
+{% endblock %}

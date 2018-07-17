@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class='wrap-contact100'>
+    <span class='contact100-form-title2'>Price for {{ car_name }}</span>
+    <img class='img-responsive img-rounded' src="{{url_for('static', filename='images/bmw-concept.jpg', width=100, quality=100)}}" alt='...' />
+    <span class='price btn btn-primary'>${{ car_price }}.00</span>
+</div>
+{% endblock %}

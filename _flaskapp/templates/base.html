@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+{{ super() }}
+<!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('.static', filename='mystyle.css')}}">
+
+{% endblock %}
+
+{% block title %}Car Price Predictor{% endblock %}
+
+{% block content %}
+<div class='container-contact100'>
+    {% block page_content %}{% endblock %}
+</div>
+{% endblock %}
