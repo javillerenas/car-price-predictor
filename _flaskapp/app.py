@@ -9,17 +9,12 @@ bootstrap = Bootstrap(app)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     form = CarForm()
-    form.make.choices = [('uno','uno'), ('dos','dos'), ('tres','tres')]
+    form.make.choices = [('bmw', 'bmw'), ('ferrari','ferrari'), ('lamborghini', 'lamborghini')]
     if form.validate_on_submit():
        car_name  = form.make.data
-       car_price = 22_000 # make api call
-    #    return redirect(url_for('index'))
+       car_price = 22_000_000 # make api call
        return render_template('priced.html', car_name=car_name, car_price=car_price)
     return render_template('index.html', form=form)
-
-# @app.route('/priced')
-# def present_price():
-#     return render_template('priced.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
