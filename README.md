@@ -17,8 +17,7 @@ In addition, this project was developed using a __`Scrum`__ workflow, managing m
 ## To-Do
 1. Develop Prediction Model
 2. Deploy on AWS
-3. Learn `Angular` and create Single-Page App
-4. Add tests and CI/CD
-5. Add **sign-ups** and **DB**
-6. Create feature to recognize a car from a photograph
+3. Add tests and **CI/CD**
+4. Add **sign-ups** and **DB**
+5. Create feature to recognize a car from a photograph
 
