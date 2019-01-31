@@ -49,7 +49,7 @@ The model is deployed as a service using `Flask`. It has only one endpoint:
 </table>
 
 ### Client-Side
-The client side was developed using `Vue.js`, `vue-router`, and `vuex`.
+The client side was developed using `Vue.js`, `vue-router`, and `vuex`.<br>
 Furthermore, `Storybook` was used to develop the two main components.
 
 ## Project Structure
