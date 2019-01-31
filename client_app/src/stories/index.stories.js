@@ -5,6 +5,7 @@ import { linkTo } from "@storybook/addon-links";
 
 import MyButton from "../components/MyButton.vue";
 import PredictForm from "../components/PredictForm.vue";
+import PredictedCard from "../components/PredictedCard.vue";
 import HeroComponent from "../components/HeroComponent.vue";
 
 storiesOf("Button", module)
@@ -37,4 +38,17 @@ storiesOf("PredictForm", module)
       HeroComponent
     },
     template: '<HeroComponent><PredictForm /></HeroComponent>',
+  }))
+  
+storiesOf("PredictedCard", module)
+  .add("default form", () => ({
+    components: { PredictedCard },
+    template: '<PredictedCard />',
+  }))
+  .add("with Hero Component", () => ({
+    components: { 
+      PredictedCard,
+      HeroComponent
+    },
+    template: '<HeroComponent><PredictedCard price="12000" carName="bwm" /></HeroComponent>',
   }))

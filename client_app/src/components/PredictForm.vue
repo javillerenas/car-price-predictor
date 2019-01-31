@@ -91,7 +91,9 @@ export default class PredictForm extends Vue {
     }
     axios.post(this.PREDICTOR_URL, payload, {headers: HEADERS}).then(res => {
       console.log("price: ", res.data.price);
-
+      this.$store.commit('setPrice', res.data.price);
+      this.$store.commit('setCarName', payload.mark);
+      this.$router.push('about');
     });
   }
 }
@@ -200,7 +202,7 @@ button.btn {
 
       &:hover {
         height: 3.5rem;
-        width: 12rem;
+        width: 13rem;
         box-shadow: 0px 0px 10px lighten($blue, 0.5);
       }
     }
