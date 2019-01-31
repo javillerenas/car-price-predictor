@@ -9,12 +9,14 @@
 
 from flask import Flask, abort, jsonify, request, render_template
 from sklearn.externals import joblib
+from flask_cors import CORS
 import numpy as np
 import json
 
 gbr = joblib.load('model.pkl')
 
 app = Flask(__name__)
+CORS(app)
 
 # @app.route('/api', methods=['POST'])
 # def make_prediction():
@@ -78,7 +80,7 @@ def input_to_one_hot(data):
     enc_input[fuelType_column_index] = 1
     return enc_input
 
-@app.route('/api',methods=['POST'])
+@app.route('/api', methods=['POST'])
 def get_delay():
     print('*'*30)
     print('json.loads(request.data): {}'.format(json.loads(request.data)))

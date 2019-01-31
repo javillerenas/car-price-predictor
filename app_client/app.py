@@ -29,7 +29,8 @@ MARKS = ['Peugeot', 'Renault', 'Citroen', 'Mercedes-Benz', 'Ford', 'Nissan',
        'Chery', 'Alfa Romeo', 'Bentley', 'Daewoo', 'Hummer', 'Mazda',
        'Chrysler', 'Maserati', 'Cadillac', 'Dodge', 'Rover', 'Porsche',
        'GMC', 'Infiniti', 'Changhe', 'Geely', 'Zotye', 'UFO', 'Foton',
-       'Pontiac', 'Acura', 'Lexus']
+       'Pontiac', 'Acura', 'Lexus'
+]
 
 FUEL_TYPE = ['Diesel', 'Essence', 'Electrique', 'LPG']
 

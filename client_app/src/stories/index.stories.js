@@ -4,7 +4,8 @@ import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 
 import MyButton from "../components/MyButton.vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import PredictForm from "../components/PredictForm.vue";
+import HeroComponent from "../components/HeroComponent.vue";
 
 storiesOf("Button", module)
   .add("with text", () => ({
@@ -25,8 +26,15 @@ storiesOf("Button", module)
     methods: { action: action("clicked") }
   }));
 
-  storiesOf("HelloWorld", module)
-    .add("hello Storybook", () => ({
-      components: { HelloWorld },
-      template: '<HelloWorld />'
-    }))
+storiesOf("PredictForm", module)
+  .add("default form", () => ({
+    components: { PredictForm },
+    template: '<PredictForm />',
+  }))
+  .add("with Hero Component", () => ({
+    components: { 
+      PredictForm,
+      HeroComponent
+    },
+    template: '<HeroComponent><PredictForm /></HeroComponent>',
+  }))
