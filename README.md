@@ -1,9 +1,9 @@
 <div align="center">
-
-<img src='docs/mockups/mockup.gif' width="400">
-<h1><strong>🚗 Car Price Prediction App💸</strong></h1>
-<h4>Figure out the value of your ride</h4>
-
+  <img src='_docs/imgs/carval-logo.png' width="175">
+  <h1><strong>🚗 Carval 💸</strong></h1>
+  <h4>Figure out the value of your ride</h4>
+  <br/>
+  <img src='_docs/imgs/mockup.png' width="500">
 </div>
 
 This is a project to demonstrate my abilities in:
