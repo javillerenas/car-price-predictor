@@ -1,6 +1,6 @@
 <template>
   <div class="predict-form">
-    <h1 class="predict-form__title">Car Price<br>Predictor</h1>
+    <h1 class="predict-form__title">Carval</h1>
 
     <form action="" class="predict-form__form">
       <div class="predict-form__input">
@@ -46,8 +46,8 @@ import axios from 'axios';
 
 const HEADERS = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
+  "Access-Control-Allow-Methods": "POST"
+  // "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
 }
 
 @Component({
@@ -124,7 +124,7 @@ button.btn {
   .predict-form__title {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 39px;
+    font-size: 4rem;
     color: #333333;
     line-height: 1.2;
     margin-bottom: 0.5rem;
